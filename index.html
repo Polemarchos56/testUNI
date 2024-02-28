@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-xmark" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showmenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis eos
+          accusamus, <br />dolorem omnis molestias vero sint veritatids.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!------ Course ------->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+            facere quas et illo suscipit quia, minus sit ratione accusamus,
+            cupiditate ad velit quo. Cum aliquam saepe aperiam voluptates vitae
+            atque?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+            facere quas et illo suscipit quia, minus sit ratione accusamus,
+            cupiditate ad velit quo. Cum aliquam saepe aperiam voluptates vitae
+            atque?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+            facere quas et illo suscipit quia, minus sit ratione accusamus,
+            cupiditate ad velit quo. Cum aliquam saepe aperiam voluptates vitae
+            atque?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!----- campus ------>
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" alt="" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png" alt="" />
+          <div class="layer">
+            <h3>New York</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/washington.png" alt="" />
+          <div class="layer">
+            <h3>Washington</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Javascript code for menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/b0068ee212.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
